@@ -1,0 +1,32 @@
+.socials-icons-container {
+    width: fit-content;
+}
+
+ul.socials-list {
+    display: grid;
+    gap: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 130px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+ul.socials-list::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background: #bec7ff;
+}
+
+li.social-icon {
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.social-icon:hover{
+    color: var(--hover-color);
+    transform: translateY(-4px);
+}

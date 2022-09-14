@@ -1,0 +1,9 @@
+.slideshow {
+    width: 100%;
+    overflow: hidden;
+}
+
+img.slideshow-image {
+    width: 50px;
+    transform: translateX(100%);
+}

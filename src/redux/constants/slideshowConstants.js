@@ -1,0 +1,1 @@
+export const SALVA_IMMAGINE = "SALVA_IMMAGINE";

@@ -1,0 +1,11 @@
+.CustomButton {
+    padding: 10px 20px;
+    border: solid 2px var(--secondary-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.CustomButton label {
+    cursor: pointer;
+}
