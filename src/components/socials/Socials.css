@@ -18,7 +18,7 @@ ul.socials-list::after {
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background: #bec7ff;
+    background: var(--text-color);
 }
 
 li.social-icon {
@@ -27,6 +27,36 @@ li.social-icon {
 }
 
 .social-icon:hover{
-    color: var(--hover-color);
+    color: var(--secondary-color);
     transform: translateY(-4px);
+}
+
+.my-email {
+    display: grid;
+    gap: 140px;
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    list-style: none;
+}
+
+.my-email p {
+    transform: rotate(90deg);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.my-email p:hover {
+    transform: rotate(90deg) translateX(-10px);
+    color: var(--hover-color);
+}
+
+.my-email::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background: var(--text-color);
 }

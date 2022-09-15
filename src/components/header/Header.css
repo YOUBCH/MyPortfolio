@@ -1,8 +1,11 @@
 .header-container {
-    padding: 80px 130px;
+    padding: 60px 130px;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
+
 
 .header {
     display: flex;
@@ -19,6 +22,20 @@ a {
 .nav-link {
     cursor: pointer;
     position: relative;
+}
+
+.nav-element{
+    top: -120px;
+    transition: 1s ease-in;
+}
+
+@keyframes loadHeader {
+    from {
+        top: -120px
+    }
+    to {
+        top: 0px;
+    }
 }
 
 .nav-link::after{
@@ -57,7 +74,7 @@ li.nav-btn::before {
     right: 0;
     z-index: -1;
     transform: scaleX(0);
-    background: #01456c;
+    background: var(--secondary-color);
     transform-origin: center right;
     transition: transform .2s ease-in;
 }

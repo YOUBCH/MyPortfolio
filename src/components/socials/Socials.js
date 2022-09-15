@@ -16,6 +16,9 @@ function Socials() {
                     <FontAwesomeIcon icon={faGithub} />
                 </li>
             </ul>
+            <div className="my-email">
+                <p>bachaouiyoussef02@gmail.com</p>
+            </div>
         </div>
     )
 }
