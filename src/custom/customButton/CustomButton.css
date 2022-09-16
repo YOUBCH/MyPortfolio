@@ -1,6 +1,6 @@
 .CustomButton {
     padding: 10px 20px;
-    border: solid 2px var(--secondary-color);
+    border: solid 2px var(--green);
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -8,4 +8,23 @@
 
 .CustomButton label {
     cursor: pointer;
+}
+
+.CustomButton:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+.CustomButton::before {
+    content: "";
+    position: absolute;
+    top: 0rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    background: var(--transparent-green);
+    transform-origin: center right;
+    transition: transform .2s ease-in;
 }

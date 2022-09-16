@@ -26,11 +26,11 @@ function Header(){
         const element = document.querySelector('.header-container');
         if(offset > 50) {
             element.style.height = "80px";
-            element.style.background = "rgb(21 30 88 / 82%)";
+            element.style.background = "rgb(13 19 62 / 44%)";
             element.style.backdropFilter = "blur(10px)";
         } else if(offset < 50){
             element.style.height = "150px";
-            element.style.background = "var(--background-color)";
+            element.style.background = "var(--blue)";
             element.style.backdropFilter = "none";
         }
     }, [offset])

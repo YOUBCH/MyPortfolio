@@ -22,16 +22,17 @@ ul.socials-list::after {
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background: var(--text-color);
+    background: var(--white);
 }
 
 li.social-icon {
+    color: var(--white);
     cursor: pointer;
     transition: .2s ease-in-out;
 }
 
 .social-icon:hover{
-    color: var(--secondary-color);
+    color: var(--green);
     transform: translateY(-4px);
 }
 
@@ -56,7 +57,7 @@ li.social-icon {
 
 .my-email p:hover {
     transform: rotate(90deg) translateX(-10px);
-    color: var(--hover-color);
+    color: var(--green);
 }
 
 .my-email::after {
@@ -65,5 +66,5 @@ li.social-icon {
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background: var(--text-color);
+    background: var(--white);
 }

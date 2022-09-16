@@ -17,7 +17,7 @@ function Hero(){
     return(
         <section className="hero" id="hero">
             <p className="hero-little-title hero-element">Hi, my name is</p>
-            <h1 className="hero-my-name hero-element">Youssef Bachaoui</h1>
+            <h1 className="hero-my-name hero-element"><label className="green">You</label>ssef <label className="green">Ba</label>chaoui</h1>
             <p className="hero-element">I'm a 20 years old web developer based in Milan, Italy.</p>
         </section>
     )

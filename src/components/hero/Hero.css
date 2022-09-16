@@ -2,23 +2,31 @@ section.hero {
     display: flex;
     width: fit-content;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin: auto;
     min-height: 100vh;
     align-items: flex-start;
     justify-content: center;
 }
 
+.hero-element {
+    transform: translateY(80px);
+    opacity: 0;
+    transition: 0.6s ease;
+    font-size: 1.3rem;
+}
+
 .hero-my-name {
     font-size: 4.5rem;
     position: relative;
     width: fit-content;
+    color: var(--white);
 }
 
 .hero-my-name::after {
     content: "";
     display: block;
-    background-color: var(--pseudo-elements-color);
+    background-color: #6dffd759;
     height: 40px;
     width: 100%;
     position: absolute;
@@ -42,14 +50,4 @@ section.hero {
     100% {
         width: 100%;
     }
-}
-
-.hero-element {
-    transform: translateY(80px);
-    opacity: 0;
-    transition: 0.6s ease;
-}
-
-p {
-    font-size: 1.3rem;
 }
