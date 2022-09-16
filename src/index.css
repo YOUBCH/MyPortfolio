@@ -4,8 +4,10 @@
   --text-color: #ffffff;
   --title-color: #ffffff;
   --section-titles-color: #cad0f9;
-  --background-color: #0a0f2f;
-  --secondary-color: #005e95;
+  --background-color: #101958;
+  --secondary-color: #34ffb6;
+  --pseudo-elements-color: #005e95;
+  --hover-fill-color: #31ffb575;
   --hover-color: #69c3f7;
 }
 

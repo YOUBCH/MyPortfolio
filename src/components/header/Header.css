@@ -79,7 +79,7 @@ li.nav-btn::before {
     right: 0;
     z-index: -1;
     transform: scaleX(0);
-    background: var(--secondary-color);
+    background: var(--hover-fill-color);
     transform-origin: center right;
     transition: transform .2s ease-in;
 }
@@ -90,7 +90,7 @@ ol.navbar {
     list-style: none;
     margin: 0;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .nav-link{

@@ -26,7 +26,7 @@ function Header(){
         const element = document.querySelector('.header-container');
         if(offset > 50) {
             element.style.height = "80px";
-            element.style.background = "#0a0f2fe8";
+            element.style.background = "rgb(21 30 88 / 82%)";
             element.style.backdropFilter = "blur(10px)";
         } else if(offset < 50){
             element.style.height = "150px";
