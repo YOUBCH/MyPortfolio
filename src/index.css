@@ -34,7 +34,7 @@ a{
 }
 
 p{
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 h1{
@@ -42,7 +42,8 @@ h1{
 }
 
 .section-titles{
-  color: var(--section-titles-color);
+  margin: 30px 0;
+  font-size: 1.8rem;
 }
 
 *{

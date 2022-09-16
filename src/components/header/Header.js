@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CustomButton from "../../custom/customButton/CustomButton";
 import "./Header.css";
-
+import resume from "../../myFiles/Youssef_Bachaoui_Resume.pdf";
 function Header(){
 
     const [offset, setOffset] = useState(0);
@@ -50,7 +50,7 @@ function Header(){
                         <li className="nav-link nav-element"><a href="#about" >About</a></li>
                         <li className="nav-link nav-element">Experience</li>
                         <li className="nav-link nav-element">Contact</li>
-                        <li className="nav-btn nav-element"><CustomButton text={"Resume"} /></li>
+                        <li className="nav-btn nav-element"><a href={resume}  target="_blank"><CustomButton text={"Resume"} /></a></li>
                     </ol>
                 </div>
             </div>

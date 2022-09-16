@@ -1,7 +1,6 @@
 import About from "../about/About";
 import Header from "../header/Header";
 import Hero from "../hero/Hero";
-import SlideShow from "../slideshow/SlideShow";
 import Socials from "../socials/Socials";
 import "./Main.css";
 
