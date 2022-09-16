@@ -22,7 +22,7 @@ return (
             </li>
         </ul>
         <div className="my-email">
-            <p>bachaouiyoussef02@gmail.com</p>
+            <p><a href="bachaouiyoussef02@gmail.com">bachaouiyoussef02@gmail.com</a></p>
         </div>
     </div>
 )
