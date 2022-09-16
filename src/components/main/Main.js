@@ -1,3 +1,4 @@
+import About from "../about/About";
 import Header from "../header/Header";
 import Hero from "../hero/Hero";
 import SlideShow from "../slideshow/SlideShow";
@@ -10,6 +11,7 @@ function Main() {
             <Header />
             <Socials />
             <Hero />
+            <About />
         </>
     )
 }

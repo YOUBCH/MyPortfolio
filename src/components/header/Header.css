@@ -1,11 +1,13 @@
 .header-container {
-    padding: 60px 130px;
+    padding: 0 90px;
     display: flex;
+    height: 150px;
     align-items: center;
     position: fixed;
     width: 100%;
+    transition: .4s ease;
+    z-index: 9;
 }
-
 
 .header {
     display: flex;
@@ -14,8 +16,11 @@
     align-items: center;
 }
 
-a {
+a{
     text-decoration: none;
+}
+
+.logo-label {
     font-size: 30px;
 }
 
@@ -26,7 +31,7 @@ a {
 
 .nav-element{
     top: -120px;
-    transition: 1s ease-in;
+    transition: 0.6s ease;
 }
 
 @keyframes loadHeader {

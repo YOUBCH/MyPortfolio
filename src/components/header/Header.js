@@ -1,8 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import CustomButton from "../../custom/customButton/CustomButton";
 import "./Header.css";
 
 function Header(){
+
+    const [offset, setOffset] = useState(0);
 
     useEffect(() => {
         const navElements = document.querySelectorAll(".nav-element");
@@ -12,7 +14,30 @@ function Header(){
             navElements[i].style.top = "0px"
             transitionDelay += 100;
         }
+        const onScroll = () => setOffset(window.pageYOffset);
+        // clean up code
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+        
     }, [])
+
+    useEffect(() => {
+        const element = document.querySelector('.header-container');
+        if(offset > 50) {
+            element.style.height = "80px";
+            element.style.background = "#0a0f2fe8";
+            element.style.backdropFilter = "blur(10px)";
+        } else if(offset < 50){
+            element.style.height = "150px";
+            element.style.background = "var(--background-color)";
+            element.style.backdropFilter = "none";
+        }
+    }, [offset])
+
+    console.log(offset)
+
+
 
     return(
         <div className="header-container">
@@ -22,7 +47,7 @@ function Header(){
                 </div>
                 <div className="navbar-container">
                     <ol className="navbar">
-                        <li className="nav-link nav-element">About</li>
+                        <li className="nav-link nav-element"><a href="#about" >About</a></li>
                         <li className="nav-link nav-element">Experience</li>
                         <li className="nav-link nav-element">Contact</li>
                         <li className="nav-btn nav-element"><CustomButton text={"Resume"} /></li>

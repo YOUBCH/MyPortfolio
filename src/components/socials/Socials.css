@@ -1,5 +1,8 @@
 .socials-icons-container {
     width: fit-content;
+    opacity: 0;
+    transition: 0.6s ease-in;
+    transition-delay: 1.5s;
 }
 
 ul.socials-list {
@@ -7,9 +10,10 @@ ul.socials-list {
     gap: 40px;
     position: fixed;
     bottom: 0;
-    left: 130px;
+    left: 90px;
     list-style: none;
     font-size: 1.2rem;
+    width: 20px;
 }
 
 ul.socials-list::after {
@@ -36,8 +40,11 @@ li.social-icon {
     gap: 140px;
     position: fixed;
     bottom: 0;
-    right: 40px;
+    right: 90px;
     list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
 }
 
 .my-email p {
