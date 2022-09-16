@@ -31,12 +31,14 @@ section.hero {
 }
 
 @keyframes loadAfterPseudo {
-    0%{
+    0% {
         width: 0%;
     }
-    80%{
+
+    80% {
         width: 0%;
     }
+
     100% {
         width: 100%;
     }
@@ -46,4 +48,8 @@ section.hero {
     transform: translateY(80px);
     opacity: 0;
     transition: 0.6s ease;
+}
+
+p {
+    font-size: 1.3rem;
 }

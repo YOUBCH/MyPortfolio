@@ -4,47 +4,10 @@ function About(){
     return(
         <section id="about">
             <h1 className="section-titles">About Me</h1>
-            <p>ewfe efsd
-                vsd v fd
-                vdv
-                df v
-                dfb
-                 db
-                 gb
-                 fg
-                 bachaouiyoussef02@gmailn nghdnmd ddhhn fghsthsth s hsh
-                 fdhs
-                 h g
-                 hg d ghndfjdhjdjfgdghd ghndfjdhjdjfgdghdh fgh dfjgfnfd dj fg nfg
-                 fghndf gd
-            </p>
-            <p>ewfe efsd
-                vsd v fd
-                vdv
-                df v
-                dfb
-                 db
-                 gb
-                 fg
-                 bachaouiyoussef02@gmailn nghdnmd ddhhn fghsthsth s hsh
-                 fdhs
-                 h g
-                 hg d ghndfjdhjdjfgdghd ghndfjdhjdjfgdghdh fgh dfjgfnfd dj fg nfg
-                 fghndf gd
-            </p>
-            <p>ewfe efsd
-                vsd v fd
-                vdv
-                df v
-                dfb
-                 db
-                 gb
-                 fg
-                 bachaouiyoussef02@gmailn nghdnmd ddhhn fghsthsth s hsh
-                 fdhs
-                 h g
-                 hg d ghndfjdhjdjfgdghd ghndfjdhjdjfgdghdh fgh dfjgfnfd dj fg nfg
-                 fghndf gd
+            <p>Hello! My name is Youssef and i'm in love with programming. I started
+                programming at 17 years old as a self-learner and at that moment i fell in love
+                with this world.<br />
+                I started programming and designing front-end in Javascript, HTML and CSS.
             </p>
         </section>
     )
