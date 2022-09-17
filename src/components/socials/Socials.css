@@ -68,3 +68,31 @@ li.social-icon {
     margin: 0px auto;
     background: var(--white);
 }
+
+@media (max-width: 768px) {
+    .socials-icons-container{
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    .my-email {
+        gap: 110px;
+    }
+
+    .my-email p {
+        font-size: 0.7rem;
+    }
+
+    .my-email::after {
+        height: 60px;
+    }
+
+    ul.socials-list {
+        font-size: 0.9rem;
+    }
+
+    ul.socials-list::after {
+        height: 60px;
+    }
+}

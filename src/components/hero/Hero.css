@@ -27,7 +27,7 @@ section.hero {
     content: "";
     display: block;
     background-color: #6dffd759;
-    height: 40px;
+    height: 50%;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -49,5 +49,15 @@ section.hero {
 
     100% {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-element{
+        font-size: 0.9rem;
+    }
+
+    .hero-my-name {
+        font-size: 2rem;
     }
 }

@@ -1,0 +1,50 @@
+section {
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 667px;
+  }
+  
+  a{
+    color: var(--white);
+  }
+  
+  p{
+    font-size: 1rem;
+  }
+  
+  h1{
+    color: var(--white);
+  }
+  
+  .section-titles{
+    margin: 30px 0;
+    font-size: 1.8rem;
+  }
+  
+  .green{
+    color: var(--green);
+  }
+
+@media (max-width: 768px) {
+    section {
+        margin: 0px auto;
+        padding: 50px 80px;
+        max-width: 600px;
+        height: calc(100vh - 200px);
+    }
+
+    .section-titles {
+        margin: 30px 0;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 50px 30px;
+    }
+}
