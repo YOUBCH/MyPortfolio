@@ -14,6 +14,19 @@ function Header() {
             navElements[i].style.top = "0px"
             transitionDelay += 100;
         }
+
+        document.querySelectorAll(".nav-link").forEach(item => {
+            console.log('metto gli eventi')
+            item.addEventListener('click', (e) => {
+                console.log('parto io')
+                e.stopImmediatePropagation();
+                const checkbox = document.querySelector('#check-menu');
+                checkbox.checked = false;
+                changeMenuVisibility();
+            }
+            )
+        });
+        
         const onScroll = () => setOffset(window.pageYOffset);
         // clean up code
         window.removeEventListener('scroll', onScroll);
@@ -41,19 +54,10 @@ function Header() {
         if (checkbox.checked) {
             menu.style.transform = "translateX(0%)";
         } else {
+            console.log('visiblee')
             menu.style.transform = "translateX(100%)";
         }
     }
-
-    document.querySelectorAll(".nav-link").forEach(item => {
-        item.addEventListener('click', (e) => {
-            e.stopImmediatePropagation();
-            const checkbox = document.querySelector('#check-menu');
-            checkbox.checked = false;
-            changeMenuVisibility();
-        }
-        )
-    });
 
     return (
         <div className="header-container">
