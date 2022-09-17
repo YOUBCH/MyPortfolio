@@ -8,7 +8,7 @@ function Header() {
 
     useEffect(() => {
         const navElements = document.querySelectorAll(".nav-element");
-        let transitionDelay = 200;
+        let transitionDelay = 0;
         for (let i = 0; i < navElements.length; i++) {
             navElements[i].style.transitionDelay = `${transitionDelay}ms`;
             navElements[i].style.top = "0px"
