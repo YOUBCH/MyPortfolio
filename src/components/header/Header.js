@@ -8,12 +8,18 @@ function Header() {
 
     useEffect(() => {
         const navElements = document.querySelectorAll(".nav-element");
-        let transitionDelay = 0;
+        let transitionDelay = 200;
         for (let i = 0; i < navElements.length; i++) {
             navElements[i].style.transitionDelay = `${transitionDelay}ms`;
             navElements[i].style.top = "0px"
             transitionDelay += 100;
         }
+
+        const hamburger = document.querySelector(".hamburger-lines");
+        hamburger.style.transform = "translateY(0px)";
+
+        const logo = document.querySelector(".logo-container");
+        logo.style.transform = "translateY(0px)";
 
         document.querySelectorAll(".nav-link").forEach(item => {
             console.log('metto gli eventi')
@@ -52,10 +58,9 @@ function Header() {
         const checkbox = document.querySelector('#check-menu');
         const menu = document.querySelector('.navbar-container')
         if (checkbox.checked) {
-            menu.style.transform = "translateX(0%)";
+            menu.classList.add('visible')
         } else {
-            console.log('visiblee')
-            menu.style.transform = "translateX(100%)";
+            menu.classList.remove('visible')
         }
     }
 

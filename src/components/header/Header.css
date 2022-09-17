@@ -20,6 +20,11 @@ a {
     text-decoration: none;
 }
 
+.logo-container{
+    transform: translateY(-100px);
+    transition: .4s ease-in-out;
+}
+
 .logo-label {
     font-size: 30px;
 }
@@ -122,13 +127,31 @@ ol.navbar {
         background: var(--blue);
         overflow: hidden;
         transition: .3s ease-in-out;
+        transition-delay: 300ms;
     }
 
     .navbar{
         flex-direction: column;
     }
 
+    .nav-element{
+        transition: .4s ease-in-out;
+        transform: translateX(200px);
+    }
+
+    .navbar-container.visible{
+        transition-delay: 0ms;
+        transform: translateX(0%);
+    }
+
+    .navbar-container.visible .nav-element {
+        transform: translateX(0);
+    }
+
     .hamburger-lines{
+        transform: translateY(-100px);
+        transition: .6s ease-in-out;
+        transition-delay: 200ms;
         height: 26px;
         width: 32px;
         top: 17px;
