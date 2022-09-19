@@ -1,0 +1,41 @@
+.tab {
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    width: 2px;
+    height: 46px;
+    border-radius: 31px;
+    background: var(--green);
+    transform: translateY(calc(0 * 70px));
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}
+
+.experience-table{
+    display: flex;
+}
+
+.companies {    
+    position: relative;
+    list-style: none;
+    display: grid;
+    border-left: solid 2px #2b3581;
+}
+
+.company-btn {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    color: var(--text-color);
+}
+
+button.company-btn:hover {
+    color: var(--green);
+}
+
+.active{
+    color: var(--green);
+}

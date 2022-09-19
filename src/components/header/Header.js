@@ -45,11 +45,9 @@ function Header() {
         const element = document.querySelector('.header-container');
         if (offset > 50) {
             element.style.height = "80px";
-            element.style.background = "rgb(13 19 62 / 44%)";
             element.style.backdropFilter = "blur(10px)";
         } else if (offset < 50) {
             element.style.height = "150px";
-            element.style.background = "var(--blue)";
             element.style.backdropFilter = "none";
         }
     }, [offset])
@@ -73,8 +71,8 @@ function Header() {
                 <div className="navbar-container">
                     <ol className="navbar">
                         <li className="nav-link nav-element"><a href="#about" >About</a></li>
-                        <li className="nav-link nav-element">Experience</li>
-                        <li className="nav-link nav-element">Contact</li>
+                        <li className="nav-link nav-element"><a href="#experience" >Experience</a></li>
+                        <li className="nav-link nav-element"><a href="#contact" >Contact</a></li>
                         <li className="nav-btn nav-element"><a href={resume} target="_blank"><CustomButton text={"Resume"} /></a></li>
                     </ol>
                 </div>

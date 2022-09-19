@@ -38,7 +38,7 @@ li.social-icon {
 
 .my-email {
     display: grid;
-    gap: 140px;
+    gap: 100px;
     position: fixed;
     bottom: 0;
     right: 90px;
@@ -50,7 +50,7 @@ li.social-icon {
 
 .my-email p {
     transform: rotate(90deg);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: .3s ease-in-out;
 }

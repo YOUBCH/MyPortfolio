@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    width: fit-content;
 }
 
 .CustomButton label {
@@ -27,4 +29,10 @@
     background: var(--transparent-green);
     transform-origin: center right;
     transition: transform .2s ease-in;
+}
+
+@media (max-width: 768px) {
+    .CustomButton {
+        font-size: 0.8rem;
+    }
 }

@@ -1,4 +1,5 @@
 import About from "../about/About";
+import Contact from "../contact/Contact";
 import Experience from "../experience/Experience";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
@@ -8,14 +9,15 @@ import "./Main.css";
 
 function Main() {
     return (
-        <>
+        <div id="main">
             <Header />
             <Socials />
             <Hero />
             <About />
             <Experience />
+            <Contact />
             <Footer />
-        </>
+        </div>
     )
 }
 

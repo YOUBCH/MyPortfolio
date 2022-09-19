@@ -1,0 +1,40 @@
+#contact{
+    text-align: center;
+}
+
+#contact p{
+    font-size: 1.1rem;
+}
+
+.contact-btn {
+    margin: 50px auto;
+    width: fit-content;
+}
+
+#contact .contact-title{
+    font-size: 3rem;
+}
+
+.contact-btn .CustomButton{
+    padding: 15px 40px;
+}
+
+@media (max-width: 768px) {
+
+    #contact .contact-title {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        font-size: 0.9rem;
+    }
+
+    .contact-btn {
+        margin: 40px auto;
+        width: fit-content;
+    }
+
+    .contact-btn .CustomButton {
+        padding: 13px 30px;
+    }
+}
