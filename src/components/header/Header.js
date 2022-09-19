@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CustomButton from "../../custom/customButton/CustomButton";
+import CustomButton from "../custom/customButton/CustomButton";
 import "./Header.css";
 import resume from "../../myFiles/Youssef_Bachaoui_Resume.pdf";
 function Header() {

@@ -9,6 +9,10 @@ section.hero {
     justify-content: center;
 }
 
+section.hero p{
+    color: var(--white);
+}
+
 .hero-element {
     transform: translateY(80px);
     opacity: 0;

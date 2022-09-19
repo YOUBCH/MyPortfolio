@@ -1,4 +1,6 @@
 import About from "../about/About";
+import Experience from "../experience/Experience";
+import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import Hero from "../hero/Hero";
 import Socials from "../socials/Socials";
@@ -11,6 +13,8 @@ function Main() {
             <Socials />
             <Hero />
             <About />
+            <Experience />
+            <Footer />
         </>
     )
 }

@@ -1,0 +1,11 @@
+.languages-icons-container {
+    display: flex;
+    font-size: 30px;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.language-icon {
+    color: var(--cyan);
+}

@@ -1,0 +1,17 @@
+footer{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--green);
+}
