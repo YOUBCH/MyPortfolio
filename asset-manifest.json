@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.261d58f5.css",
-    "main.js": "/MyPortfolio/static/js/main.038c1370.js",
+    "main.css": "/MyPortfolio/static/css/main.4ac971f2.css",
+    "main.js": "/MyPortfolio/static/js/main.53450acb.js",
     "static/js/787.1ed0c42c.chunk.js": "/MyPortfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Youssef_Bachaoui_Resume.pdf": "/MyPortfolio/static/media/Youssef_Bachaoui_Resume.4539a1790aa833ee4930.pdf",
     "static/media/logo.svg": "/MyPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/MyPortfolio/index.html",
-    "main.261d58f5.css.map": "/MyPortfolio/static/css/main.261d58f5.css.map",
-    "main.038c1370.js.map": "/MyPortfolio/static/js/main.038c1370.js.map",
+    "main.4ac971f2.css.map": "/MyPortfolio/static/css/main.4ac971f2.css.map",
+    "main.53450acb.js.map": "/MyPortfolio/static/js/main.53450acb.js.map",
     "787.1ed0c42c.chunk.js.map": "/MyPortfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.261d58f5.css",
-    "static/js/main.038c1370.js"
+    "static/css/main.4ac971f2.css",
+    "static/js/main.53450acb.js"
   ]
 }
