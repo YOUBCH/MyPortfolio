@@ -3,11 +3,10 @@
     top: 0px;
     left: -2px;
     width: 2px;
-    height: 46px;
+    height: 60.66px;
     border-radius: 31px;
     background: var(--green);
-    transform: translateY(calc(0 * 70px));
-    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+    transition: .3s ease-in-out;
 }
 
 .experience-table{
@@ -15,6 +14,7 @@
 }
 
 .companies {    
+    width: 190px;
     position: relative;
     list-style: none;
     display: grid;
@@ -26,7 +26,7 @@
     outline: none;
     border: none;
     font-size: 0.9rem;
-    padding: 15px 15px;
+    padding: 22px 15px;
     cursor: pointer;
     transition: .2s ease-in-out;
     color: var(--text-color);
@@ -38,4 +38,48 @@ button.company-btn:hover {
 
 .active{
     color: var(--green);
+}
+
+.experience-description-container{
+    padding: 20px 40px;
+}
+
+.experience-description{
+    display: grid;
+    gap: 5px;
+}
+
+.duration {
+    color: var(--text-color);
+}
+
+.company-link, .company-link a{
+    color: var(--green);
+}
+
+.company-link a:hover {
+    text-decoration: underline;
+}
+
+.tasks-list{
+    list-style: none;
+    position: relative;
+}
+
+.task{
+    padding-left: 20px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.task::before {
+    content: '';
+    background: white;
+    width: 8px;
+    height: 7px;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
 }

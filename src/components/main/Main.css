@@ -2,6 +2,7 @@ section {
     margin: 0px auto;
     padding: 100px 0px;
     max-width: 667px;
+    min-height: 65vh;
   }
   
   a{
@@ -12,7 +13,7 @@ section {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 15px;
-    color: var(--text-color);
+    color: var(--white);
   }
   
   h1{

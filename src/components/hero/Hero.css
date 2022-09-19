@@ -4,12 +4,12 @@ section.hero {
     flex-direction: column;
     gap: 10px;
     margin: auto;
-    min-height: 100vh;
+    min-height: 88vh;
     align-items: flex-start;
     justify-content: center;
 }
 
-section.hero .hero-little-title{
+section.hero .hero-little-title {
     font-size: 1.3rem;
     color: var(--white);
 }
@@ -20,8 +20,8 @@ section.hero .hero-little-title{
     transition: 0.6s ease;
 }
 
-.hero-paragraph{
-    color: var(--text-color);
+.hero-paragraph {
+    color: var(--white);
     font-size: 1.2rem;
 }
 
@@ -62,7 +62,13 @@ section.hero .hero-little-title{
 }
 
 @media (max-width: 768px) {
-    .hero-element{
+
+    section.hero {
+        padding-top: 150px;
+        min-height: 90vh;
+    }
+
+    .hero-element {
         font-size: 0.9rem;
     }
 
@@ -70,8 +76,8 @@ section.hero .hero-little-title{
         font-size: 2rem;
     }
 
-    .hero-paragraph{
-        color: var(--text-color);
+    .hero-paragraph {
+        color: var(--white);
         font-size: 0.9rem;
     }
 }

@@ -66,7 +66,7 @@ function Header() {
         <div className="header-container">
             <div className="header">
                 <div className="logo-container">
-                    <a href="/"><label className="logo-label">YouBa</label></a>
+                    <a href="#hero"><label className="logo-label">YouBa</label></a>
                 </div>
                 <div className="navbar-container">
                     <ol className="navbar">

@@ -21,7 +21,9 @@ function Hero() {
             <h1 className="hero-my-name hero-element"><label className="green">You</label>ssef <label className="green">Ba</label>chaoui</h1>
             <p className="hero-element hero-paragraph">I'm a 20 years old web developer based in Milan, Italy, and i develop web apps with the best UX, UI and using the best languages for the project</p>
             <div className="hero-element">
-                <CustomButton text={"Contact Me"} />
+                <a href='#contact' >
+                    <CustomButton text={"Contact Me"} />
+                </a>
             </div>
         </section>
     )
