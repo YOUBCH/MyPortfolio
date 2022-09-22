@@ -103,7 +103,7 @@ button.company-btn:hover {
     }
 
     .companies{
-        width: 120px;
+        width: 100px;
     }
 
     .company-btn {
@@ -117,11 +117,11 @@ button.company-btn:hover {
     }
 
     .tasks-list {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .duration {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         margin-bottom: 0px;
     }
 }
