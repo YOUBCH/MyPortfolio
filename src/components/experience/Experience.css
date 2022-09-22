@@ -102,8 +102,12 @@ button.company-btn:hover {
         padding: 50px 20px;
     }
 
+    .companies{
+        width: 120px;
+    }
+
     .company-btn {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         height: 60.66px;
         padding: 0px;
     }
