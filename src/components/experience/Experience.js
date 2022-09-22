@@ -13,7 +13,7 @@ function Experience() {
         btn.classList.add('active');
         document.querySelector('.tab').style.top = `calc(${companies.indexOf(company)} * 60.70px)`;
         companies.indexOf(company)
-
+        
         const expDescription = document.querySelector(`.experience-description.${company}`);
         document.querySelector('.visible').classList.remove('visible');
         expDescription.classList.add('visible')
@@ -64,7 +64,7 @@ function Experience() {
                         </ul>
                     </div>
                     <div className="experience-description app-informatica">    
-                        <h3><span>High School Internship - Full-Stack Developer</span><span className="company-link"> @<a href='https://www.pjon.org/' target="_blank">PJON</a></span></h3>
+                        <h3><span>High School Internship - Computer Technician</span><span className="company-link"> @<a href='https://www.appinformatica.com/' target="_blank">APP informatica</a></span></h3>
                         <p className="duration">June 2022 - present</p>
                         <ul className="tasks-list">
                             <li className="task">Build web apps writing clean code, easy to undestand and mantain.</li>
@@ -74,7 +74,7 @@ function Experience() {
                         </ul>
                     </div>
                     <div className="experience-description pwc">    
-                        <h3><span>High School Internship - Full-Stack Developer</span><span className="company-link"> @<a href='https://www.pjon.org/' target="_blank">PJON</a></span></h3>
+                        <h3><span>High School Internship - Computer Technician</span><span className="company-link"> @<a href='https://www.pwc.com/it/it.html' target="_blank">PWC</a></span></h3>
                         <p className="duration">June 2022 - present</p>
                         <ul className="tasks-list">
                             <li className="task">Build web apps writing clean code, easy to undestand and mantain.</li>

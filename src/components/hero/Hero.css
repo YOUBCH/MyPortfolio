@@ -4,7 +4,7 @@ section.hero {
     flex-direction: column;
     gap: 10px;
     margin: auto;
-    min-height: 88vh;
+    min-height: 100vh;
     align-items: flex-start;
     justify-content: center;
 }
@@ -12,6 +12,7 @@ section.hero {
 section.hero .hero-little-title {
     font-size: 1.3rem;
     color: var(--white);
+    margin-bottom: 0;
 }
 
 .hero-element {
@@ -26,7 +27,7 @@ section.hero .hero-little-title {
 }
 
 .hero-my-name {
-    font-size: 4.5rem;
+    font-size: 4rem;
     position: relative;
     width: fit-content;
     color: var(--white);

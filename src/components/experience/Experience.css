@@ -48,7 +48,7 @@ button.company-btn:hover {
 }
 
 .experience-description {
-    display: grid;
+    visibility: hidden;
     gap: 5px;
     position: absolute;
     opacity: 0;
@@ -92,10 +92,11 @@ button.company-btn:hover {
 }
 
 .visible {
+    visibility: visible;
     opacity: 1;
     transition-delay: 150ms;
+    animation: makeVisible 1s ease-in-out;
 }
-
 
 @media (max-width: 768px) {
     #experience {
