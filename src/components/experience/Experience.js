@@ -48,39 +48,35 @@ function Experience() {
                         <p className="duration">May 2021 - October 2021</p>
                         <ul className="tasks-list">
                             <li className="task">Build web apps writing clean code, easy to undestand and mantain.</li>
-                            <li className="task">Working with languages such as Java, Javascript and MySQL.</li>
-                            <li className="task">Working using frameworks and libraries such as Spring, React and Redux.</li>
-                            <li className="task">Creation and consuming of RESTful API.</li>
+                            <li className="task">Working with languages such as Javascript and PHP.</li>
+                            <li className="task">Working using libraries such as JQuery and Codeigniter.</li>
                         </ul>
                     </div>
                     <div className="experience-description pjon">    
                         <h3><span>High School Internship - Full-Stack Developer</span><span className="company-link"> @<a href='https://www.pjon.org/' target="_blank">PJON</a></span></h3>
-                        <p className="duration">June 2022 - present</p>
+                        <p className="duration">January 2021 - May 2021</p>
                         <ul className="tasks-list">
                             <li className="task">Build web apps writing clean code, easy to undestand and mantain.</li>
-                            <li className="task">Working with languages such as Java, Javascript and MySQL.</li>
-                            <li className="task">Working using frameworks and libraries such as Spring, React and Redux.</li>
-                            <li className="task">Creation and consuming of RESTful API.</li>
+                            <li className="task">Working with Javascript vanilla, PHP, HTML and CSS.</li>
+                            <li className="task">Creation of good designs using my skills on UX/UI.</li>
                         </ul>
                     </div>
                     <div className="experience-description app-informatica">    
                         <h3><span>High School Internship - Computer Technician</span><span className="company-link"> @<a href='https://www.appinformatica.com/' target="_blank">APP informatica</a></span></h3>
-                        <p className="duration">June 2022 - present</p>
+                        <p className="duration">November 2019 - December 2019</p>
                         <ul className="tasks-list">
-                            <li className="task">Build web apps writing clean code, easy to undestand and mantain.</li>
-                            <li className="task">Working with languages such as Java, Javascript and MySQL.</li>
-                            <li className="task">Working using frameworks and libraries such as Spring, React and Redux.</li>
-                            <li className="task">Creation and consuming of RESTful API.</li>
+                            <li className="task">Technical assistance, installation of hardware components and software, and the configuration of them.</li>
+                            <li className="task">Fixing computers and notebooks.</li>
+                            <li className="task">Technical mantainance on computers.</li>
                         </ul>
                     </div>
                     <div className="experience-description pwc">    
                         <h3><span>High School Internship - Computer Technician</span><span className="company-link"> @<a href='https://www.pwc.com/it/it.html' target="_blank">PWC</a></span></h3>
                         <p className="duration">June 2022 - present</p>
                         <ul className="tasks-list">
-                            <li className="task">Build web apps writing clean code, easy to undestand and mantain.</li>
-                            <li className="task">Working with languages such as Java, Javascript and MySQL.</li>
-                            <li className="task">Working using frameworks and libraries such as Spring, React and Redux.</li>
-                            <li className="task">Creation and consuming of RESTful API.</li>
+                            <li className="task">Technical assistance, installation of business softwares and computer mantainance.</li>
+                            <li className="task">installation of security softwares.</li>
+                            <li className="task">configuration of new computers for the new users</li>
                         </ul>
                     </div>
                 </div>

@@ -32,8 +32,11 @@ li.social-icon {
 }
 
 .social-icon:hover{
-    color: var(--green);
     transform: translateY(-4px);
+}
+
+.social-icon:hover a{
+    color: var(--green);
 }
 
 .my-email {
@@ -57,6 +60,9 @@ li.social-icon {
 
 .my-email p:hover {
     transform: rotate(90deg) translateX(-10px);
+}
+
+.my-email p:hover a{
     color: var(--green);
 }
 
