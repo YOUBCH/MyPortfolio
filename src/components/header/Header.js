@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import CustomButton from "../custom/customButton/CustomButton";
+// import CustomButton from "../custom/customButton/CustomButton";
 import "./Header.css";
-import resume from "../../myFiles/Youssef_Bachaoui_Resume.pdf";
+// import resume from "../../myFiles/Youssef_Bachaoui_Resume.pdf";
 function Header() {
 
     const [offset, setOffset] = useState(0);
@@ -66,14 +66,14 @@ function Header() {
         <div className="header-container">
             <div className="header">
                 <div className="logo-container">
-                    <a href="#hero"><label className="logo-label">YouBa</label></a>
+                    <a href="#hero"><label className="logo-label">Youssef Bachaoui</label></a>
                 </div>
                 <div className="navbar-container">
                     <ol className="navbar">
                         <li className="nav-link nav-element"><a href="#about" >About</a></li>
                         <li className="nav-link nav-element"><a href="#experience" >Experience</a></li>
                         <li className="nav-link nav-element"><a href="#contact" >Contact</a></li>
-                        <li className="nav-btn nav-element"><a href={resume} target="_blank"><CustomButton text={"Resume"} /></a></li>
+                        {/* <li className="nav-btn nav-element"><a href={resume} target="_blank" rel="noreferrer"><CustomButton text={"Resume"} /></a></li> */}
                     </ol>
                 </div>
                 <div className="hamburger-lines">

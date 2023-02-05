@@ -14,7 +14,7 @@
 }
 
 .companies {
-    height: 303px;
+    height: fit-content;
     width: 190px;
     position: relative;
     list-style: none;
