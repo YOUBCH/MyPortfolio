@@ -42,7 +42,7 @@ function Experience() {
             Accenture
           </button>
           <button
-            className="company-btn active"
+            className="company-btn"
             name="object-method"
             onClick={(e) => selectCompany(e)}
           >
