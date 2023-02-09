@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedinIn,
   faInstagram,
-  faGithub,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { useEffect } from "react";
 
@@ -16,17 +16,17 @@ function Socials() {
     <div className="socials-icons-container">
       <ul className="socials-list">
         <li className="social-icon">
-          <a href='https://www.instagram.com/youss__02?r=nametag'>
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </li>
-        <li className="social-icon">
-          <a href='https://it.linkedin.com/in/youssef-bachaoui-926a061a1'>
+          <a href="https://it.linkedin.com/in/youssef-bachaoui-926a061a1">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </li>
         <li className="social-icon">
-          <a href='https://github.com/YOUBCH'>
+          <a href="https://www.instagram.com/youss__02?r=nametag">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+        </li>
+        <li className="social-icon">
+          <a href="https://github.com/YOUBCH">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
