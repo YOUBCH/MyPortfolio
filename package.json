@@ -46,6 +46,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "gh-pages": "^4.0.0",
+    "typescript": "^5.9.3"
   }
 }

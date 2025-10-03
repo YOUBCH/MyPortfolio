@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 
-:root{
+
+:root {
   --white: #ffffff;
-  --text-color: #cbcbcb;
+  --text-color: #d7d7d7;
+  --secondary-text-color: #a3a3a3;
   --section-titles-color: #cbcbcb;
-  --blue: #0d133e;
-  --green: #34ffb6;
+  --blue: #3030ff;
+  --green: #52ff90;
   --transparent-green: #31ffb575;
   --cyan: #69c3f7;
 }
@@ -17,25 +19,90 @@ html {
 body {
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Gabriela", serif;
   font-weight: 400;
   color: var(--white);
-  background-color: var(--blue);
+  background: radial-gradient(circle at center, var(--blue), var(--green));
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-::selection{
+::selection {
   background: var(--transparent-green);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.gradient-animation {
+  background: linear-gradient(264deg, #9f9fa7, var(--green), #52ff90);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }

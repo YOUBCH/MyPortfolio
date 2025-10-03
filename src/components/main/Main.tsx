@@ -13,7 +13,7 @@ function Main() {
             <Header />
             <Socials />
             <Hero />
-            <About />
+            {/* <About /> */}
             <Experience />
             <Contact />
             <Footer />
