@@ -4,33 +4,50 @@ function Header() {
 
 
     useEffect(() => {
-        const navElements = document.querySelectorAll(".nav-element");
+        const navElements = Array.from(document.querySelectorAll<HTMLElement>(".nav-element"));
         let transitionDelay = 0;
-        for (let i = 0; i < navElements.length; i++) {
-            const navElement = navElements[i] as HTMLElement;
-            navElement.style.transitionDelay = `${transitionDelay}ms`;
-            navElement.style.top = "0px"
+        navElements.forEach(el => {
+            el.style.transition = "none";
+            el.style.top = "-50px";
+        });
+
+        void document.body.offsetHeight;
+
+        navElements.forEach(el => {
+            el.style.transition = `top 0.5s ease ${transitionDelay}ms`;
+            requestAnimationFrame(() => {
+                el.style.top = "0px";
+            });
             transitionDelay += 100;
-        }
+        });
 
         const hamburger = document.querySelector(".hamburger-lines") as HTMLElement;
-        hamburger.style.transform = "translateY(0px)";
-
         const logo = document.querySelector(".header-container") as HTMLElement;
-        logo.style.transform = "translateY(0px)";
+
+        if (hamburger) {
+            hamburger.style.transition = "transform 0.5s ease";
+            hamburger.style.transform = "translateY(-50px)";
+        }
+        if (logo) {
+            logo.style.transition = "transform 0.5s ease";
+            logo.style.transform = "translateY(-50px)";
+        }
+
+        void document.body.offsetHeight;
+
+        if (hamburger) requestAnimationFrame(() => { hamburger.style.transform = "translateY(0px)"; });
+        if (logo) requestAnimationFrame(() => { logo.style.transform = "translateY(0px)"; });
 
         document.querySelectorAll(".nav-link").forEach(item => {
             item.addEventListener('click', (e) => {
                 e.stopImmediatePropagation();
                 const checkbox = document.querySelector('#check-menu') as HTMLInputElement;
-                checkbox.checked = false;
+                if (checkbox) checkbox.checked = false;
                 changeMenuVisibility();
-            }
-            )
+            });
         });
 
-
-    }, [])
+    }, []);
 
     const changeMenuVisibility = () => {
         const checkbox = document.querySelector('#check-menu') as HTMLInputElement;

@@ -1,23 +1,37 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import CustomButton from "../custom/customButton/CustomButton";
 import "./Hero.css";
 
 function Hero() {
+    const [reloadKey] = useState(Date.now());
 
+    console.log("Hero component rendered with key:", reloadKey);
     useEffect(() => {
-        const heroElements = document.querySelectorAll(".hero-element");
+        const heroElements = Array.from(document.querySelectorAll<HTMLElement>(".hero-element"));
+        if (!heroElements.length) return;
+
+        heroElements.forEach(el => {
+            el.style.transition = "none";
+            el.style.transform = "translateY(80px)";
+            el.style.opacity = "0";
+        });
+
+        void document.body.offsetHeight;
+
         let transitionDelay = 900;
-        for (let i = 0; i < heroElements.length; i++) {
-            const el = heroElements[i] as HTMLElement;
-            el.style.transitionDelay = `${transitionDelay}ms`;
-            el.style.transform = "translateY(0px)";
-            el.style.opacity = "1";
+        heroElements.forEach(el => {
+            el.style.transition = `transform 0.6s ease ${transitionDelay}ms, opacity 0.6s ease ${transitionDelay}ms`;
+            requestAnimationFrame(() => {
+                el.style.transform = "translateY(0px)";
+                el.style.opacity = "1";
+            });
             transitionDelay += 100;
-        }
-    }, [])
+        });
+    }, []);
+
 
     return (
-        <section className="hero" id="hero">
+        <section className="hero" id="hero" key={reloadKey}>
             <div style={{
                 width: "fit-content",
                 margin: "0 auto",
