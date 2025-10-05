@@ -27,7 +27,7 @@
 }
 
 .nav-link a {
-    color: var(--blue);
+    color: var(--dark-green);
     text-decoration: none;
 }
 
@@ -43,6 +43,7 @@
 .nav-link {
     cursor: pointer;
     position: relative;
+    width: fit-content;
 }
 
 .nav-element {
@@ -63,7 +64,7 @@
 .nav-link::after {
     content: "";
     display: block;
-    background-color: var(--green);
+    background-color: #006f4730;
     height: 8px;
     width: 0;
     position: absolute;
@@ -82,13 +83,20 @@
     position: relative;
 }
 
+.header-subtitle {
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 ol.navbar {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     list-style: none;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
     width: 100%;
 }
 
@@ -156,10 +164,10 @@ ol.navbar {
     margin: 0;
     right: -24px;
     left: unset;
-    padding: 5rem 3rem;
+    padding: 4rem 3rem 2.5rem;
     min-width: 15rem;
     background: var(--white);
-    color: var(--blue);
+    color: var(--dark-green);
     overflow: hidden;
     transition: .3s ease-in-out;
     top: -24px;
@@ -196,36 +204,46 @@ ol.navbar {
 .navbar-container.visible {
     transition-delay: 0ms;
     transform: translateX(0%);
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     margin: 0;
     right: -24px;
     left: unset;
-    padding: 5rem 3rem;
     min-width: 15rem;
     opacity: 1;
 }
 
 #check-menu:checked~.line {
-    background: var(--blue);
+    background: var(--dark-green);
 }
 
 
 @media (max-width: 768px) {
 
     .header-container {
-        padding: 0 20px;
+        padding: 0 1.25rem;
+        background: #0a294061;
+        backdrop-filter: blur(10px);
+        top: 0;
     }
 
     .logo-label {
         font-size: 1.3rem;
     }
 
+    .nav-link a {
+        font-size: 1rem;
+    }
+
+    .header-subtitle {
+        font-size: 1rem;
+    }
+
     .navbar-container {
+        padding: 4rem 2rem 2.5rem;
+    }
+
+    /* .navbar-container {
         transform: translateX(100%);
         position: fixed;
         margin: auto;
@@ -233,12 +251,17 @@ ol.navbar {
         right: 0;
         top: 0;
         height: 100vh;
+        width: 100vw;
         display: grid;
         align-items: center;
         background: var(--blue);
         overflow: hidden;
         transition: .3s ease-in-out;
         transition-delay: 300ms;
+    } */
+    /* 
+    .nav-link a {
+        color: var(--white);
     }
 
     .navbar {
@@ -253,12 +276,15 @@ ol.navbar {
 
     .navbar-container.visible .nav-element {
         transform: translateX(0);
-    }
+    } */
 
-    .navbar-container.visible {
+    /* .navbar-container.visible {
+        transition: .3s ease-in-out;
         transition-delay: 0ms;
         transform: translateX(0%);
-    }
+        height: 100vh;
+        width: 100vw;
+    } */
 
 
 }

@@ -1,3 +1,4 @@
+import { ChipProps, Chips } from "../chips/Chips";
 import "./WorkCard.css"
 
 
@@ -8,7 +9,8 @@ export const WorkCard: React.FC<{
   startDate: string;
   endDate: string;
   link?: string;
-}> = ({ description, endDate, startDate, title, company, link }) => {
+  chips?: ChipProps[];
+}> = ({ description, endDate, startDate, title, company, link, chips }) => {
 
   const handleClick = () => {
     window.open(link, '_blank'); // _blank apre in una nuova scheda
@@ -23,6 +25,7 @@ export const WorkCard: React.FC<{
         <p className="work-description" style={{
           maxWidth: "30rem"
         }}>{description}</p>
+        {chips && <Chips chips={chips} />}
       </div>
     </div>
   )

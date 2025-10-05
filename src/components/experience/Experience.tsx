@@ -1,4 +1,5 @@
 import Accordion from "../accordion/Accordion";
+import { Chips } from "../chips/Chips";
 import { WorkCard } from "../work-card/WorkCard";
 import "./Experience.css";
 
@@ -44,7 +45,9 @@ This includes gathering requirements, proposing solutions, managing feedback, an
           startDate="2025"
           endDate="Present"
           title="CEO & Co-Founder"
-          company="BH Digital" />
+          company="BH Digital"
+          chips={[{ label: "React" }, { label: "TypeScript" }, { label: "Next.js" }, { label: "TailwindCSS" }]}
+        />
         <WorkCard
           link="https://www.accenture.com/it-it"
           description="During this experience, I was responsible for front-end development using React and TypeScript, within a micro-frontend architecture. I led the creation and ongoing maintenance of a shared UI library, fully documented with Storybook, ensuring consistency across multiple teams and projects.
@@ -53,7 +56,9 @@ This includes gathering requirements, proposing solutions, managing feedback, an
           startDate="2022"
           endDate="2025"
           title="Front-End Developer"
-          company="Accenture" />
+          company="Accenture"
+          chips={[{ label: "TypeScript" }, { label: "React" }, { label: "Svelte" }, { label: "Lit" }, { label: "Redux" }]}
+        />
         <WorkCard
           link="http://www.objectmethod.it/"
           description="I worked on the development of web applications using JavaScript, Java, and MySQL, leveraging frameworks and libraries such as React and Redux.
@@ -61,7 +66,9 @@ This includes gathering requirements, proposing solutions, managing feedback, an
           startDate="2022"
           endDate="2022"
           title="Front-End Developer"
-          company="Object Method" />
+          company="Object Method"
+          chips={[{ label: "React" }, { label: "Javascript" }, { label: "Java" }]}
+        />
 
         <WorkCard
           link="https://sognando.casa/it"
@@ -70,7 +77,9 @@ This includes gathering requirements, proposing solutions, managing feedback, an
           startDate="2021"
           endDate="2021"
           title="Front-End Developer"
-          company="Sognando Casa" />
+          company="Sognando Casa"
+          chips={[{ label: "JQuery" }, { label: "JavaScript" }, { label: "PHP" }]}
+        />
 
       </div>
     </section>

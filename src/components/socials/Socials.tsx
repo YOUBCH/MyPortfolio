@@ -22,7 +22,7 @@ function Socials() {
           </a>
         </li>
         <li className="social-icon">
-          <a href="https://www.instagram.com/youssef.bachaoui" target="_blank">
+          <a href="https://www.instagram.com/youssef.bachaoui.dev" target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
