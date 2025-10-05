@@ -1,4 +1,3 @@
-import About from "../about/About";
 import Contact from "../contact/Contact";
 import Experience from "../experience/Experience";
 import Footer from "../footer/Footer";
@@ -13,7 +12,6 @@ function Main() {
             <Header />
             <Socials />
             <Hero />
-            {/* <About /> */}
             <Experience />
             <Contact />
             <Footer />

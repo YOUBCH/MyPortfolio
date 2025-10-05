@@ -10,8 +10,6 @@
   gap: 1rem;
   cursor: pointer;
   transition: .3s ease;
-  /* background-color: var(--white); */
-  /* color: var(--blue); */
 }
 
 .work-title {
