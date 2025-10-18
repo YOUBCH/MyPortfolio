@@ -73,7 +73,7 @@ function Header() {
                         </ol>
                         <span className="header-subtitle">SAY HELLO</span>
                         <ol className="navbar">
-                            <li className="nav-link nav-element"><a href="#experience">bachaouiyoussef02@gmail.com</a></li>
+                            <li className="nav-link nav-element"><a href="mailto:bachaouiyoussef02@gmail.com">bachaouiyoussef02@gmail.com</a></li>
                             <li className="nav-link nav-element"><a href="https://www.instagram.com/youssef.bachaoui.dev/#" target="_blank">Instagram</a></li>
                             <li className="nav-link nav-element"><a href="https://www.linkedin.com/in/youssef-bachaoui-926a061a1/" target="_blank">Linkedin</a></li>
                         </ol>

@@ -16,6 +16,11 @@ footer a:hover {
     color: var(--green);
 }
 
+span {
+    color: var(--text-color);
+    font-size: 0.75rem;
+}
+
 @media (max-width: 768px){
     footer a {
         font-size: 0.7rem;

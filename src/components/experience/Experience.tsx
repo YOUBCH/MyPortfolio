@@ -38,7 +38,7 @@ function Experience() {
         margin: "0 auto",
       }}>
         <h1 className="section-titles">Experience</h1>
-        <WorkCard
+        {/* <WorkCard
           link="https://www.bhdigital.it/"
           description="I’m responsible for the development of websites, taking care of both the technical implementation and the relationship with clients. My role involves transforming client needs into effective, responsive, and visually engaging digital experiences, while maintaining open and proactive communication throughout the entire project lifecycle.
 This includes gathering requirements, proposing solutions, managing feedback, and ensuring that the final product aligns with both business goals and user expectations."
@@ -47,14 +47,15 @@ This includes gathering requirements, proposing solutions, managing feedback, an
           title="CEO & Co-Founder"
           company="BH Digital"
           chips={[{ label: "React" }, { label: "TypeScript" }, { label: "Next.js" }, { label: "TailwindCSS" }]}
-        />
+        /> */}
         <WorkCard
           link="https://www.accenture.com/it-it"
-          description="During this experience, I was responsible for front-end development using React and TypeScript, within a micro-frontend architecture. I led the creation and ongoing maintenance of a shared UI library, fully documented with Storybook, ensuring consistency across multiple teams and projects.
-            My role involved integrating APIs, managing application state effectively, and optimizing performance to enhance the overall user experience. I worked closely with back-end teams, UX designers, and clients in an Agile environment, contributing actively to sprint planning and cross-functional alignment.
-            Additionally, I supported junior developers, providing guidance and mentorship to help them grow and integrate smoothly within the team."
+          description="During this experience, I was responsible for front-end development within a micro-frontend architecture, using React, TypeScript, and Svelte. I led the development of several web applications — including a management system built with Svelte — ensuring clean architecture, high performance, and a strong focus on user experience.
+I also contributed to the maintenance and evolution of a shared UI library developed with Lit Web Components and documented with Storybook, helping ensure design consistency and reusability across multiple projects and teams.
+Throughout the projects, I integrated APIs, optimized performance, and delivered reliable, high-quality solutions tailored to client needs. I also mentored junior developers, providing technical guidance and helping them understand project goals and best practices.
+I worked closely with designers, back-end developers, and clients in an Agile environment, actively participating in sprint planning, task estimation, and sprint reviews to ensure clear communication and continuous progress."
           startDate="2022"
-          endDate="2025"
+          endDate="Present"
           title="Front-End Developer"
           company="Accenture"
           chips={[{ label: "TypeScript" }, { label: "React" }, { label: "Svelte" }, { label: "Lit" }, { label: "Redux" }]}
